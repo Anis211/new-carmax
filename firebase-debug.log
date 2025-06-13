@@ -1,0 +1,93 @@
+[debug] [2025-06-10T21:24:14.639Z] ----------------------------------------------------------------------
+[debug] [2025-06-10T21:24:14.644Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HUAWEI\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2025-06-10T21:24:14.644Z] CLI Version:   14.6.0
+[debug] [2025-06-10T21:24:14.644Z] Platform:      win32
+[debug] [2025-06-10T21:24:14.644Z] Node Version:  v20.17.0
+[debug] [2025-06-10T21:24:14.645Z] Time:          Wed Jun 11 2025 05:24:14 GMT+0800 (China Standard Time)
+[debug] [2025-06-10T21:24:14.645Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase CLI integrates with Gemini in Firebase API to provide assistant features. Learn more about using Gemini in Firebase and how we train our models: https://firebase.google.com/docs/gemini-in-firebase/set-up-gemini#required-permissions 
+[info] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you. 
+[info] 
+[info] i  To change your the preference at any time, run `firebase logout` and `firebase login` again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=282993517&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-06-10T21:24:44.601Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2025-06-10T21:24:44.602Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2025-06-10T21:25:05.731Z] *** [apiv2] error from fetch(https://accounts.google.com/o/oauth2/token, {"headers":{},"method":"POST","body":{"_overheadLength":543,"_valueLength":208,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------555056312569994636381129","_events":{},"_eventsCount":1}}): FetchError: request to https://accounts.google.com/o/oauth2/token failed, reason: connect ETIMEDOUT 59.24.3.174:443
+[debug] [2025-06-10T21:25:05.732Z] Token Fetch Error: FirebaseError: Failed to make request to https://accounts.google.com/o/oauth2/token
+    at RetryOperation._fn (C:\Users\HUAWEI\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:261:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-06-10T21:25:05.740Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2025-06-10T21:25:05.740Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"e30e5326-1497-487c-be20-2403b6b78e37"}
+[debug] [2025-06-11T01:09:48.705Z] ----------------------------------------------------------------------
+[debug] [2025-06-11T01:09:48.708Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HUAWEI\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2025-06-11T01:09:48.708Z] CLI Version:   14.6.0
+[debug] [2025-06-11T01:09:48.708Z] Platform:      win32
+[debug] [2025-06-11T01:09:48.708Z] Node Version:  v20.17.0
+[debug] [2025-06-11T01:09:48.708Z] Time:          Wed Jun 11 2025 09:09:48 GMT+0800 (China Standard Time)
+[debug] [2025-06-11T01:09:48.708Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase CLI integrates with Gemini in Firebase API to provide assistant features. Learn more about using Gemini in Firebase and how we train our models: https://firebase.google.com/docs/gemini-in-firebase/set-up-gemini#required-permissions 
+[info] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you. 
+[info] 
+[info] i  To change your the preference at any time, run `firebase logout` and `firebase login` again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=634757284&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-06-11T01:10:33.816Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2025-06-11T01:10:33.817Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2025-06-11T01:10:54.936Z] *** [apiv2] error from fetch(https://accounts.google.com/o/oauth2/token, {"headers":{},"method":"POST","body":{"_overheadLength":543,"_valueLength":208,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------632359117772027648368477","_events":{},"_eventsCount":1}}): FetchError: request to https://accounts.google.com/o/oauth2/token failed, reason: connect ETIMEDOUT 59.24.3.174:443
+[debug] [2025-06-11T01:10:54.937Z] Token Fetch Error: FirebaseError: Failed to make request to https://accounts.google.com/o/oauth2/token
+    at RetryOperation._fn (C:\Users\HUAWEI\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:261:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-06-11T01:10:54.953Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2025-06-11T01:10:54.953Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"27fc945c-83c2-47fb-9d89-a37e9f2e35d1"}
+[debug] [2025-06-11T01:10:55.883Z] <<< [apiv2][status] POST https://auth.firebase.tools/attest 200
+[debug] [2025-06-11T01:10:55.884Z] <<< [apiv2][body] POST https://auth.firebase.tools/attest {"token":"ZU6SPWob-RsPSOY8QNXwpc4I3kZt_ud5NRJO7NXixnE"}
+[info] 
+[info] To sign in to the Firebase CLI:
+[info] 
+[info] 1. Take note of your session ID:
+[info] 
+[info]    27FC9
+[info] 
+[info] 2. Visit the URL below on any device and follow the instructions to get your code:
+[info] 
+[info]    https://auth.firebase.tools/login?code_challenge=7NYxhy60kg97GpchYHYNzxe84YjEpE-eDxsUgEFzwQw&session=27fc945c-83c2-47fb-9d89-a37e9f2e35d1&attest=ZU6SPWob-RsPSOY8QNXwpc4I3kZt_ud5NRJO7NXixnE
+[info] 
+[info] 3. Paste or enter the authorization code below once you have it:
+[info] 
+[debug] [2025-06-11T01:51:22.326Z] ----------------------------------------------------------------------
+[debug] [2025-06-11T01:51:22.330Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HUAWEI\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2025-06-11T01:51:22.330Z] CLI Version:   14.6.0
+[debug] [2025-06-11T01:51:22.330Z] Platform:      win32
+[debug] [2025-06-11T01:51:22.331Z] Node Version:  v20.17.0
+[debug] [2025-06-11T01:51:22.331Z] Time:          Wed Jun 11 2025 09:51:22 GMT+0800 (China Standard Time)
+[debug] [2025-06-11T01:51:22.331Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase CLI integrates with Gemini in Firebase API to provide assistant features. Learn more about using Gemini in Firebase and how we train our models: https://firebase.google.com/docs/gemini-in-firebase/set-up-gemini#required-permissions 
+[info] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you. 
+[info] 
+[info] i  To change your the preference at any time, run `firebase logout` and `firebase login` again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=703659573&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-06-11T01:51:43.119Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2025-06-11T01:51:43.119Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]

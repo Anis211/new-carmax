@@ -1,4 +1,8 @@
 node_modules
-.next
+.next/cache
 .git
 .env.local
+Dockerfile
+*.log
+npm-debug.*
+yarn.lock

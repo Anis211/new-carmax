@@ -1,35 +1,23 @@
-FROM node:20-bookworm AS builder
+# Use an official Node.js runtime as the base image
+FROM node:18-alpine
 
-# Set working directory inside container
-WORKDIR /app
+# Set the working directory in the container
+WORKDIR /usr/src/app
 
-# Copy package.json and package-lock.json
-COPY package*.json ./
+# Copy package.json and package-lock.json to the container
+COPY package.json package-lock.json ./
 
 # Install dependencies
-RUN npm install --frozen-lockfile --only=prod
+RUN npm install
 
-# Copy source code
+# Copy the rest of the application files to the container
 COPY . .
 
-# Build the app
+# Build the Next.js application for production
 RUN npm run build
 
-# Final minimal stage
-FROM node:20-bookworm AS release
-
-# Reuse same working dir
-WORKDIR /app
-
-# Copy only necessary files from builder
-COPY --from=builder /app/.next/standalone .next/standalone
-COPY --from=builder /app/public public
-COPY --from=builder /app/src src
-COPY --from=builder /app/next.config.mjs next.config.mjs
-COPY --from=builder /app/package*.json ./
-
-# Expose port used by Next.js
+# Expose the application port (assuming your app runs on port 3000)
 EXPOSE 3000
 
-# Start the app
-CMD ["node", ".next/standalone/server.js"]
+# Start the application
+CMD ["npm", "start"]

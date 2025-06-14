@@ -5,6 +5,8 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}", // make sure this matches your file structure
     "./components/**/*.{js,jsx,ts,tsx}",
   ],
+  safelist: ["flex", "flex-col", "flex-row"],
+  purge: false,
   theme: {
     extend: {
       scrollbar: {

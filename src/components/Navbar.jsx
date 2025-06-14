@@ -85,7 +85,7 @@ export default function Navbar() {
 
   return (
     <div className="px-8 py-6 min-h-[8vh] border-b border-gray-800 flex flex-row md:bg-black">
-      <nav className="visible md:hidden fixed top-0 left-0 w-full bg-gray-900 text-white z-50">
+      <nav className="sm:visible md:hidden fixed top-0 left-0 w-full bg-gray-900 text-white z-50">
         <div className="flex justify-between items-center px-4 py-3">
           <div className="text-xl font-bold text-yellow-400">CARMAX</div>
           <div className="flex items-center space-x-3">
@@ -429,7 +429,7 @@ export default function Navbar() {
         <div
           className={`${
             isMenuOpen ? "max-h-60" : "max-h-0"
-          } visible md:hidden overflow-hidden transition-all duration-300 ease-in-out`}
+          } sm:visible md:hidden overflow-hidden transition-all duration-300 ease-in-out`}
         >
           <div className="px-4 py-2">
             <a href="/" className="block py-3 border-b border-gray-700">
@@ -447,12 +447,12 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <div className="invisible md:visible w-[25%] flex flex-col">
+      <div className="sm:invisible md:visible w-[25%] flex flex-col">
         <h1 className="font-inter font-bold text-3xl text-yellow-400">
           CARMAX
         </h1>
       </div>
-      <div className="invisible md:visible w-[50%] mt-2 flex flex-row justify-evenly items-center">
+      <div className="sm:invisible md:visible w-[50%] mt-2 flex flex-row justify-evenly items-center">
         {[
           { name: "Главная", link: "/" },
           { name: "О нас", link: "/#about" },
@@ -487,7 +487,7 @@ export default function Navbar() {
           </motion.h2>
         ))}
       </div>
-      <div className="invisible md:visible w-[25%] flex flex-row gap-5 justify-end items-center">
+      <div className="sm:invisible md:visible w-[25%] flex flex-row gap-5 justify-end items-center">
         <div className="flex items-center space-x-4">
           <div className="relative">
             <button
